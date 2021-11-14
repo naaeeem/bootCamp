@@ -9,7 +9,46 @@
     <title> Forntend Developer</title>
 </head>
 <body>
-    <h1> Hello Naeeem !! </h1>
+    
+    <!-- Nav bar-->
+    <!-- navbar-expand-lg : data will not disappear until we get to -lg(large) point 
+         bg-dark : color of the navbar
+         navbar-dark : color of the text
+    -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand"> Frontend Bootcamp </a>
+
+            <!--
+                data-bs-toggle="collapse" : toggle to collapse 
+                data-bs-target="#navmenu" : target a specific item(navmenu) to toggle
+            -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- 
+                collapse : this will collapse when window gets small
+                ms-auto  : margin starts at auto
+            -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link"> What you'll learn </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link"> Questions </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link"> Instructors </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </nav>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
